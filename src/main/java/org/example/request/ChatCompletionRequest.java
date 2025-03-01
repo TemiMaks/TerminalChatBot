@@ -28,8 +28,7 @@ public class ChatCompletionRequest {
     }
 
     public void addMessage(String input) {
-        messages.add(new Message("user", input));
+        messages.set(messages.size() - 1, new Message("user", input));
     }
-
 
 }
