@@ -19,8 +19,9 @@ public class ChatCompletionResponse {
 
     @Override
     public String toString() {
-        return "ChatCompletionResponse{" +
-                "choices=" + choices +
-                '}';
+        if (choices != null && !choices.isEmpty() && choices.get(0).getMessage() != null) {
+            return choices.get(0).getMessage().getContent();
+        }
+        return "";
     }
 }

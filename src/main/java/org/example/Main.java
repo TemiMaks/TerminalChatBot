@@ -11,7 +11,7 @@ public class Main {
             String input;
             ChatCompletionRequest request = prepareRequest();
             ChatBotClient chatBotClient = new ChatBotClient();
-            System.out.println("ChatBot: Hello! Welcome to the ChatBot! How can I help you? (Enter \"exit\" to quit");
+            System.out.println("ChatBot: Hello! Welcome to the ChatBot! How can I help you? (Enter \"exit\" to quit)");
             do {
                 System.out.print("You: ");
                 input = scanner.nextLine();
@@ -20,7 +20,7 @@ public class Main {
                 } else {
                     request.addMessage(input);
                     ChatCompletionResponse response = chatBotClient.postRequest(request);
-                    System.out.println(response);
+                    System.out.println("ChatBot: " + response);
                 }
             } while (!shouldExit(input));
         }
