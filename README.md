@@ -9,13 +9,23 @@
 ![img_1.png](src/main/resources/img_1.png)
 #### Po chwili, gdy model zostanie poprawnie załadowany, program jest już gotowy do działania w trybie LM Studio
 
+### 2. Uruchamianie programu
+#### Ten projekt został zbudowany przy użyciu Gradle. Repozytorium zawiera wszystkie niezbędne pliki do uruchomienia aplikacji, w tym Gradle Wrapper oraz gotowy build.
+#### Aby uruchomić program, wykonaj jedną z poniższych komend w terminalu:
 
-### 2. Polecenia użytkownika
+### Na systemie Linux/macOS:
+    ./gradlew run
+### Na systemie Windows
+    gradlew.bat run
+#### A zbudowanie projektu
+    ./gradlew build
+
+### 3. Polecenia użytkownika
 #### Program wymaga początkowego określenia, z którego oprogramowania będziemy korzystać (LM Studio / Ollama)
 #### Następnie ChatBot wita użytkownika, w tym momencie możemy już wpisywać swoje wypowiedzi
 #### W celu opuszczenia programu wystarczy wprowadzić "exit" (case insensitive)
 
-### 3. Błędy
+### 4. Błędy
 #### Najczęstszym problemem może być brak połączenia z lokalnym modelem, aby sprawdzić stan połączenia możemy skorzystać z CURL'a
     curl -X POST http://localhost:1234/v1/completions \
     -H "Content-Type: application/json" \
