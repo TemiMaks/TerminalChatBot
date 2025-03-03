@@ -16,14 +16,14 @@
 ### Na systemie Linux/macOS:
     ./gradlew run
 ### Na systemie Windows
-    gradlew.bat run
+    .\gradlew.bat run
 #### A zbudowanie projektu
     ./gradlew build
 
 ### 3. Polecenia użytkownika
-#### Program wymaga początkowego określenia, z którego oprogramowania będziemy korzystać (LM Studio / Ollama)
-#### Następnie ChatBot wita użytkownika, w tym momencie możemy już wpisywać swoje wypowiedzi
+#### Po poprawnym odpaleniu programu ChatBot wita użytkownika, w tym momencie możemy już wpisywać swoje wypowiedzi
 #### W celu opuszczenia programu wystarczy wprowadzić "exit" (case insensitive)
+
 
 ### 4. Błędy
 #### Najczęstszym problemem może być brak połączenia z lokalnym modelem, aby sprawdzić stan połączenia możemy skorzystać z CURL'a
