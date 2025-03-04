@@ -1,3 +1,5 @@
+import static org.gradle.api.logging.LogLevel.QUIET
+
 plugins {
     id 'java'
 }
@@ -23,4 +25,8 @@ test {
 tasks.register('run', JavaExec) {
     mainClass = 'org.example.Main'
     classpath = sourceSets.main.runtimeClasspath
+}
+
+tasks.named('run') {
+    standardInput = System.in
 }
